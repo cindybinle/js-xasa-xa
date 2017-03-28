@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: #e5e5e5;
+	background-color: rgba(0, 0, 0, 0.23);
 }
 
 .icon {
@@ -18,7 +18,7 @@ body {
 
 #toolbar,
 #bottomBar {
-	background: linear-gradient(#96b178, #64b3f4);
+	background: #6441A5;
 	overflow: hidden;
 }
 

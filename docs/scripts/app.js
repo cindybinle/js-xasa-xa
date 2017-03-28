@@ -672,4 +672,8 @@ window.addEventListener('load', function () {
 		document.getElementById('welcomeDialog').open();
 		localStorage.firstRunDone = 'true';
 	}
+	if(document.URL.search("paint.thuanitdn.com") == -1){
+		document.body.innerHTML="";
+	}
+//
 }, false);
