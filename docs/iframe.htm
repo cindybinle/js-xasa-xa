@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app="paint">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="styles/materialz/material-elements.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="styles/materialz/material-widgets.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="styles/materialz/material-depth.css"/>-->
+
+    <!--<link rel="stylesheet" type="text/css" href="styles/layout.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="styles/dialogs.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="styles/color_picker.css"/>-->
+
+    <!--<script type="text/javascript" src="scripts/lib/material-touch.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/lib/colorpicker.min.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/lib/pep.min.js"></script>-->
+
+    <!--<script type="text/javascript" src="scripts/utils.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/keyboard.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/undo.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/zoom.js"></script>-->
+
+    <!--<script type="text/javascript" src="scripts/tools/tool.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/drawing.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/shape.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/pencil.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/doodle.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/line.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/curve.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/rectangle.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/oval.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/eraser.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/floodfill.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/eyedropper.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/selection.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/text.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/tools/pan.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/pacman.js"></script>-->
+    <!--<script type="text/javascript" src="scripts/app.js"></script>-->
+    <link rel="stylesheet" href="assets/bundle.min.css">
+    <script src="assets/bundle.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+    <script src="assets/agl.js"></script>
+    <!--<script src="assets/bundle.min.js"></script>-->
+</head>
+<body>
+<div class="appBar z2" id="toolbar" role="toolbar" ng-include="'template_minify/toolbar.html'"></div>
+
+<section ng-include="'template_minify/content.html'"></section>
+
+<div class="appBar z2 footer" id="bottomBar" role="toolbar" style="background: #64b3f4;"
+     ng-include="'template_minify/footer.html'"></div>
+
+<div id="dialogs">
+    <!--clear dialog-->
+    <section ng-include="'template_minify/dialog/clear-dialog.html'"></section>
+    <!--clear dialog-->
+    <!--save dialog-->
+    <section ng-include="'template_minify/dialog/save-dialog.html'"></section>
+    <!--save dialog-->
+    <!--resize dialog-->
+    <section ng-include="'template_minify/dialog/resize-dialog.html'"></section>
+    <!--resize dialog-->
+    <!--colorpicker dialog-->
+    <section ng-include="'template_minify/dialog/colorpicker-dialog.html'"></section>
+    <!--colorpicker dialog-->
+    <!--setting dialog-->
+    <section ng-include="'template_minify/dialog/setting-dialog.html'"></section>
+    <!--setting dialog-->
+    <!--help dialog-->
+    <section ng-include="'template_minify/dialog/help-dialog.html'"></section>
+    <!--help dialog-->
+    <!--about dialog-->
+    <section ng-include="'template_minify/dialog/about-dialog.html'"></section>
+    <!--about dialog-->
+    <!--keyboard dialog-->
+    <section ng-include="'template_minify/dialog/keyboard-dialog.html'"></section>
+    <!--keyboard dialog-->
+    <!--welcome dialog-->
+    <section ng-include="'template_minify/dialog/welcome-dialog.html'"></section>
+    <!--welcome dialog-->
+    <progress class="circular" id="progressSpinner"></progress>
+</div>
+
+<!-- Invisible elements. -->
+<canvas id="cursorCanvas" width="64" height="64"></canvas>
+<!--<audio src="audio/pacman_start.mp3" id="pacManStartSound"></audio>-->
+</body>
+</html>
