@@ -13,7 +13,7 @@ gulp.task('minify-css', function() {
     "styles/dialogs.css",
     "styles/color_picker.css"
   ])
-    .pipe(concat('bundle.min.css'))
+    .pipe(concat('bundle2.min.css'))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('assets'));
 });
@@ -51,7 +51,7 @@ gulp.task('uglify-js', function() {
     "scripts/pacman.js",
     "scripts/app.js"
   ])
-    .pipe(concat('bundle.min.js'))
+    .pipe(concat('bundle2.min.js'))
     .pipe(uglify({
       mangle: false
     }))
